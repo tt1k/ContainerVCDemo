@@ -1,0 +1,23 @@
+//
+//  LeftViewController.h
+//  ContainerVCDemo
+//
+//  Created by FakeCoder on 2020/10/22.
+//
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+@interface LeftViewController : UIViewController
+
+@property (nonatomic, weak) id delegate;
+
+@end
+
+@protocol LeftViewDelegate
+
+@required
+- (void)userClickItem:(NSString *)content;
+
+@end
+
