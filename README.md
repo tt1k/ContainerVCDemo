@@ -62,7 +62,9 @@ Important: Read [View Controller Programming Guide for iOS](https://developer.ap
 UIKit有一些自带的Container VC，比如UINavigationController、UITabBarController、UISplitViewController和UIPageViewController
 但我们也可以自定义一个我们想要但Container VC
 
-下图以`UISplitViewController` 为例展示Container VC如何管理其Child VC        ![img](https://uploader.shimo.im/f/h1AzAIuVvarxRoZT.png!thumbnail)       VC层次结构当应用只有单个页面的Content VC此时root VC就是这个Content VC        ![img](https://uploader.shimo.im/f/3ry2AnsgXMMnvgJO.png!thumbnail)       当应用只有单个页面的Container VC此时root VC就是这个Container VC，但这个Container VC管理着其下的所有Child VC，由所有Child VC去组成这个Container VC的视图        ![img](https://uploader.shimo.im/f/ImeHfzH5jay9nVIh.png!thumbnail)       跳到一个新的VC比如用户点击一个按钮跳到一个新页面，此时新的VC会覆盖住原有的视图，但被覆盖但视图是否需要被销毁取决于开发者，可以销毁也可以保留住
+下图以`UISplitViewController` 为例展示Container VC如何管理其Child VC        ![img](https://uploader.shimo.im/f/h1AzAIuVvarxRoZT.png!thumbnail)       VC层次结构当应用只有单个页面的Content VC此时root VC就是这个Content VC        ![img](https://uploader.shimo.im/f/3ry2AnsgXMMnvgJO.png!thumbnail)       
+
+当应用只有单个页面的Container VC此时root VC就是这个Container VC，但这个Container VC管理着其下的所有Child VC，由所有Child VC去组成这个Container VC的视图        ![img](https://uploader.shimo.im/f/ImeHfzH5jay9nVIh.png!thumbnail)       跳到一个新的VC比如用户点击一个按钮跳到一个新页面，此时新的VC会覆盖住原有的视图，但被覆盖但视图是否需要被销毁取决于开发者，可以销毁也可以保留住
 
 ​       ![img](https://uploader.shimo.im/f/KEGt4QBV4q0tPQMW.png!thumbnail)      
 
