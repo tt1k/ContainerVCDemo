@@ -11,6 +11,7 @@
 #import "TabbarViewController.h"
 #import "PageViewController.h"
 #import "SplitViewController.h"
+#import "CustomViewController.h"
 
 @interface RootViewController() <UITableViewDelegate, UITableViewDataSource>
 
@@ -37,11 +38,11 @@
     // 作为tableView的数据源
     _tableViewGroup = [[NSMutableArray alloc] init];
     [_tableViewGroup addObject:@[@"UINavigationViewController",
-                                 @"UITabbarViewController",
+                                 @"UITabBarViewController",
                                  @"UIPageViewController",
                                  @"UISpiltViewController"]];
-    [_tableViewGroup addObject:@[@"Demo1", @"Demo2", @"Demo3"]];
-    [_tableViewGroup addObject:@[@"Demo1", @"Demo2", @"Demo3"]];
+    [_tableViewGroup addObject:@[@"模仿抖音"]];
+    [_tableViewGroup addObject:@[@"待定"]];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -84,6 +85,12 @@
     }
     if (indexPath.section == 0 && indexPath.row == 3) {
         SplitViewController *vc = [[SplitViewController alloc] init];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+        vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self.navigationController presentViewController:vc animated:YES completion:nil];
+    }
+    if (indexPath.section == 1 && indexPath.row == 0) {
+        CustomViewController *vc = [[CustomViewController alloc] init];
         vc.modalPresentationStyle = UIModalPresentationFullScreen;
         vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
         [self.navigationController presentViewController:vc animated:YES completion:nil];
