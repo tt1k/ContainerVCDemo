@@ -15,6 +15,7 @@
 		E2A15C3A2541376600B665D0 /* HeadCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A15C392541376600B665D0 /* HeadCenterVC.m */; };
 		E2A15C3F25414EE200B665D0 /* HeadLeftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A15C3E25414EE200B665D0 /* HeadLeftVC.m */; };
 		E2A15C4325414FA000B665D0 /* HeadRightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A15C4225414FA000B665D0 /* HeadRightVC.m */; };
+		E2A15C492542D61800B665D0 /* UserVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A15C482542D61800B665D0 /* UserVC.m */; };
 		E2F3D67B253FE3DF008D73C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F3D67A253FE3DF008D73C7 /* AppDelegate.m */; };
 		E2F3D67E253FE3DF008D73C7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F3D67D253FE3DF008D73C7 /* SceneDelegate.m */; };
 		E2F3D681253FE3DF008D73C7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F3D680253FE3DF008D73C7 /* RootViewController.m */; };
@@ -48,6 +49,8 @@
 		E2A15C3E25414EE200B665D0 /* HeadLeftVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadLeftVC.m; sourceTree = "<group>"; };
 		E2A15C4125414F9A00B665D0 /* HeadRightVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadRightVC.h; sourceTree = "<group>"; };
 		E2A15C4225414FA000B665D0 /* HeadRightVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadRightVC.m; sourceTree = "<group>"; };
+		E2A15C472542D61200B665D0 /* UserVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserVC.h; sourceTree = "<group>"; };
+		E2A15C482542D61800B665D0 /* UserVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserVC.m; sourceTree = "<group>"; };
 		E2F3D676253FE3DF008D73C7 /* ContainerVCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContainerVCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F3D679253FE3DF008D73C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E2F3D67A253FE3DF008D73C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,6 +99,8 @@
 				E2A15C3E25414EE200B665D0 /* HeadLeftVC.m */,
 				E2A15C4125414F9A00B665D0 /* HeadRightVC.h */,
 				E2A15C4225414FA000B665D0 /* HeadRightVC.m */,
+				E2A15C472542D61200B665D0 /* UserVC.h */,
+				E2A15C482542D61800B665D0 /* UserVC.m */,
 			);
 			path = CustomVCPage;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 				E2F3D6B92540038C008D73C7 /* TabbarUserVC.m in Sources */,
 				E2F3D6A8253FF4D8008D73C7 /* NavigationRootVC.m in Sources */,
 				E2F3D6BE254003A3008D73C7 /* TabbarShopVC.m in Sources */,
+				E2A15C492542D61800B665D0 /* UserVC.m in Sources */,
 				E2A15C3A2541376600B665D0 /* HeadCenterVC.m in Sources */,
 				E2F3D681253FE3DF008D73C7 /* RootViewController.m in Sources */,
 				E2A15C1C254098EA00B665D0 /* SplitViewController.m in Sources */,

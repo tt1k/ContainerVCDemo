@@ -9,6 +9,7 @@
 #import "HeadCenterVC.h"
 #import "HeadLeftVC.h"
 #import "HeadRightVC.h"
+#import "UserVC.h"
 
 #define WIDTH self.view.frame.size.width
 #define HEIGHT self.view.frame.size.height
@@ -109,6 +110,7 @@
     [_bottomSection addSubview:_bottom3];
 
     _bottom4 = [self buttonWithFrame:CGRectMake(WIDTH / 2 + bottomTitleWidth * 2, 0, bottomTitleWidth, 50) andTitle:@"我的"];
+    [_bottom4 addTarget:self action:@selector(goUser) forControlEvents:UIControlEventTouchUpInside];
     [_bottomSection addSubview:_bottom4];
 }
 
@@ -159,6 +161,22 @@
     [_currentVC removeFromParentViewController];
     
     HeadRightVC *newvc = [[HeadRightVC alloc] init];
+    newvc.view.frame = CGRectMake(0, _headSection.frame.origin.y + 50, WIDTH, HEIGHT - 130 - _statusBarHeight);
+    _currentVC = newvc;
+    
+    [self addChildViewController:_currentVC];
+    [self.view addSubview:_currentVC.view];
+    [_currentVC didMoveToParentViewController:self];
+}
+
+// 切换到我的页面
+- (void)goUser {
+    NSLog(@"切换到用户页面");
+    [_currentVC willMoveToParentViewController:nil];
+    [_currentVC.view removeFromSuperview];
+    [_currentVC removeFromParentViewController];
+    
+    UserVC *newvc = [[UserVC alloc] init];
     newvc.view.frame = CGRectMake(0, _headSection.frame.origin.y + 50, WIDTH, HEIGHT - 130 - _statusBarHeight);
     _currentVC = newvc;
     
