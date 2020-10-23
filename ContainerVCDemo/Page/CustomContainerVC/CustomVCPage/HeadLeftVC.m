@@ -23,6 +23,16 @@
     [self.view addSubview:label];
 }
 
+- (void)willMoveToParentViewController:(UIViewController *)parent {
+//    [super willMoveToParentViewController:parent];
+    NSLog(@"HeadLeftVC willMoveToParentViewController");
+}
+
+- (void)didMoveToParentViewController:(UIViewController *)parent {
+//    [super didMoveToParentViewController:parent];
+    NSLog(@"HeadLeftVC didMoveToParentViewController");
+}
+
 - (void)dealloc {
     NSLog(@"HeadLeftVC dealloc");
 }

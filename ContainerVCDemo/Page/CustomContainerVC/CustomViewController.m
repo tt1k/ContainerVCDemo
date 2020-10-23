@@ -55,6 +55,7 @@
     
     [self addChildViewController:_currentVC];
     [self.view addSubview:_currentVC.view];
+    [_currentVC didMoveToParentViewController:self];
 }
 
 // 设置屏幕上方的同城 关注 推荐
@@ -120,6 +121,8 @@
 
 // 切换到关注页面
 - (void)goHeadCenter {
+    NSLog(@"切换到关注页面");
+    [_currentVC willMoveToParentViewController:nil];
     [_currentVC.view removeFromSuperview];
     [_currentVC removeFromParentViewController];
     
@@ -129,10 +132,13 @@
     
     [self addChildViewController:_currentVC];
     [self.view addSubview:_currentVC.view];
+    [_currentVC didMoveToParentViewController:self];
 }
 
 // 切换到同城页面
 - (void)goHeadLeft {
+    NSLog(@"切换到同城页面");
+    [_currentVC willMoveToParentViewController:nil];
     [_currentVC.view removeFromSuperview];
     [_currentVC removeFromParentViewController];
     
@@ -142,10 +148,13 @@
     
     [self addChildViewController:_currentVC];
     [self.view addSubview:_currentVC.view];
+    [_currentVC didMoveToParentViewController:self];
 }
 
 // 切换到推荐页面
 - (void)goHeadRight {
+    NSLog(@"切换到推荐页面");
+    [_currentVC willMoveToParentViewController:nil];
     [_currentVC.view removeFromSuperview];
     [_currentVC removeFromParentViewController];
     
@@ -155,6 +164,7 @@
     
     [self addChildViewController:_currentVC];
     [self.view addSubview:_currentVC.view];
+    [_currentVC didMoveToParentViewController:self];
 }
 
 @end
