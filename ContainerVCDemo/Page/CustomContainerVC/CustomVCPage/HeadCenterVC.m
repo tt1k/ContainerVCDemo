@@ -11,7 +11,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"HeadCenterVC viewDidLoad");
     [self initView];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"HeadCenterVC viewWillAppear");
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    NSLog(@"HeadCenterVC viewWillDisappear");
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    NSLog(@"HeadCenterVC viewDidDisappear");
 }
 
 - (void)initView {
@@ -24,12 +40,12 @@
 }
 
 - (void)willMoveToParentViewController:(UIViewController *)parent {
-//    [super willMoveToParentViewController:parent];
+    [super willMoveToParentViewController:parent];
     NSLog(@"HeadCenterVC willMoveToParentViewController");
 }
 
 - (void)didMoveToParentViewController:(UIViewController *)parent {
-//    [super didMoveToParentViewController:parent];
+    [super didMoveToParentViewController:parent];
     NSLog(@"HeadCenterVC didMoveToParentViewController");
 }
 

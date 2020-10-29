@@ -14,6 +14,21 @@
     [self initView];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"HeadLeftVC viewWillAppear");
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    NSLog(@"HeadLeftVC viewWillDisappear");
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    NSLog(@"HeadLeftVC viewDidDisappear");
+}
+
 - (void)initView {
     self.view.backgroundColor = [UIColor whiteColor];
     // 添加展示label
@@ -24,12 +39,12 @@
 }
 
 - (void)willMoveToParentViewController:(UIViewController *)parent {
-//    [super willMoveToParentViewController:parent];
+    [super willMoveToParentViewController:parent];
     NSLog(@"HeadLeftVC willMoveToParentViewController");
 }
 
 - (void)didMoveToParentViewController:(UIViewController *)parent {
-//    [super didMoveToParentViewController:parent];
+    [super didMoveToParentViewController:parent];
     NSLog(@"HeadLeftVC didMoveToParentViewController");
 }
 
