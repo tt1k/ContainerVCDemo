@@ -14,6 +14,7 @@
 #import "CustomViewController.h"
 #import "RespondersVC.h"
 #import "CustomGestureVC.h"
+#import "HitTestVC.h"
 
 @interface RootViewController() <UITableViewDelegate, UITableViewDataSource>
 
@@ -44,7 +45,7 @@
                                  @"UIPageViewController",
                                  @"UISpiltViewController"]];
     [_tableViewGroup addObject:@[@"模仿抖音"]];
-    [_tableViewGroup addObject:@[@"事件响应Demo", @"自定义Gesture"]];
+    [_tableViewGroup addObject:@[@"事件响应Gesture", @"自定义Gesture", @"重写hitTest:withEvent:"]];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -102,6 +103,12 @@
     }
     if (indexPath.section == 2 && indexPath.row == 1) {
         CustomGestureVC *vc = [[CustomGestureVC alloc] init];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+        vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self.navigationController presentViewController:vc animated:YES completion:nil];
+    }
+    if (indexPath.section == 2 && indexPath.row == 2) {
+        HitTestVC *vc = [[HitTestVC alloc] init];
         vc.modalPresentationStyle = UIModalPresentationFullScreen;
         vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
         [self.navigationController presentViewController:vc animated:YES completion:nil];

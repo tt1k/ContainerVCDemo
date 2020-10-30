@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA3D1ED4254C0A0F007D5224 /* HitTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3D1ED3254C0A0F007D5224 /* HitTestVC.m */; };
+		AA3D1EDA254C0A25007D5224 /* ViewA.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3D1ED9254C0A25007D5224 /* ViewA.m */; };
+		AA3D1EDF254C0A34007D5224 /* ViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3D1EDE254C0A34007D5224 /* ViewB.m */; };
+		AA3D1EE3254C0A41007D5224 /* ViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3D1EE2254C0A41007D5224 /* ViewC.m */; };
+		AA3D1EE8254C12A4007D5224 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3D1EE7254C12A4007D5224 /* CustomView.m */; };
 		AA909A5F254BD9A300013CEA /* CustomGestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA909A5E254BD9A300013CEA /* CustomGestureVC.m */; };
 		AA909A65254BDA6900013CEA /* SwirlGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA909A64254BDA6900013CEA /* SwirlGestureRecognizer.m */; };
 		E2A15C172540920600B665D0 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A15C162540920600B665D0 /* ContentViewController.m */; };
@@ -36,6 +41,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA3D1ED2254C0A08007D5224 /* HitTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HitTestVC.h; sourceTree = "<group>"; };
+		AA3D1ED3254C0A0F007D5224 /* HitTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HitTestVC.m; sourceTree = "<group>"; };
+		AA3D1ED8254C0A1F007D5224 /* ViewA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewA.h; sourceTree = "<group>"; };
+		AA3D1ED9254C0A25007D5224 /* ViewA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewA.m; sourceTree = "<group>"; };
+		AA3D1EDD254C0A2C007D5224 /* ViewB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewB.h; sourceTree = "<group>"; };
+		AA3D1EDE254C0A34007D5224 /* ViewB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewB.m; sourceTree = "<group>"; };
+		AA3D1EE1254C0A3A007D5224 /* ViewC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewC.h; sourceTree = "<group>"; };
+		AA3D1EE2254C0A41007D5224 /* ViewC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewC.m; sourceTree = "<group>"; };
+		AA3D1EE6254C12A4007D5224 /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		AA3D1EE7254C12A4007D5224 /* CustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		AA909A5D254BD99D00013CEA /* CustomGestureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomGestureVC.h; sourceTree = "<group>"; };
 		AA909A5E254BD9A300013CEA /* CustomGestureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomGestureVC.m; sourceTree = "<group>"; };
 		AA909A64254BDA6900013CEA /* SwirlGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwirlGestureRecognizer.m; sourceTree = "<group>"; };
@@ -99,6 +114,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA3D1ED7254C0A13007D5224 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA3D1ED8254C0A1F007D5224 /* ViewA.h */,
+				AA3D1ED9254C0A25007D5224 /* ViewA.m */,
+				AA3D1EDD254C0A2C007D5224 /* ViewB.h */,
+				AA3D1EDE254C0A34007D5224 /* ViewB.m */,
+				AA3D1EE1254C0A3A007D5224 /* ViewC.h */,
+				AA3D1EE2254C0A41007D5224 /* ViewC.m */,
+				AA3D1EE6254C12A4007D5224 /* CustomView.h */,
+				AA3D1EE7254C12A4007D5224 /* CustomView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E2A15C372541371700B665D0 /* CustomVCPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,12 +147,15 @@
 		E2F24A45254AE1FD00C22589 /* RespondersPageVC */ = {
 			isa = PBXGroup;
 			children = (
+				AA3D1ED7254C0A13007D5224 /* Views */,
 				E2F24A46254AE22300C22589 /* RespondersVC.h */,
 				E2F24A47254AE22900C22589 /* RespondersVC.m */,
 				AA909A5D254BD99D00013CEA /* CustomGestureVC.h */,
 				AA909A5E254BD9A300013CEA /* CustomGestureVC.m */,
 				AA909A68254BDB8D00013CEA /* SwirlGestureRecognizer.h */,
 				AA909A64254BDA6900013CEA /* SwirlGestureRecognizer.m */,
+				AA3D1ED2254C0A08007D5224 /* HitTestVC.h */,
+				AA3D1ED3254C0A0F007D5224 /* HitTestVC.m */,
 			);
 			path = RespondersPageVC;
 			sourceTree = "<group>";
@@ -338,11 +371,14 @@
 			files = (
 				E2F3D6B92540038C008D73C7 /* TabbarUserVC.m in Sources */,
 				E2F3D6A8253FF4D8008D73C7 /* NavigationRootVC.m in Sources */,
+				AA3D1EDA254C0A25007D5224 /* ViewA.m in Sources */,
+				AA3D1EDF254C0A34007D5224 /* ViewB.m in Sources */,
 				E2F3D6BE254003A3008D73C7 /* TabbarShopVC.m in Sources */,
 				E2A15C492542D61800B665D0 /* UserVC.m in Sources */,
 				E2A15C3A2541376600B665D0 /* HeadCenterVC.m in Sources */,
 				AA909A5F254BD9A300013CEA /* CustomGestureVC.m in Sources */,
 				E2F3D681253FE3DF008D73C7 /* RootViewController.m in Sources */,
+				AA3D1EE3254C0A41007D5224 /* ViewC.m in Sources */,
 				E2A15C1C254098EA00B665D0 /* SplitViewController.m in Sources */,
 				E2A15C292540AA0200B665D0 /* RightViewController.m in Sources */,
 				AA909A65254BDA6900013CEA /* SwirlGestureRecognizer.m in Sources */,
@@ -356,7 +392,9 @@
 				E2A15C4325414FA000B665D0 /* HeadRightVC.m in Sources */,
 				E2A15C302541104C00B665D0 /* CustomViewController.m in Sources */,
 				E2F3D68C253FE3E1008D73C7 /* main.m in Sources */,
+				AA3D1ED4254C0A0F007D5224 /* HitTestVC.m in Sources */,
 				E2A15C232540A2C100B665D0 /* LeftViewController.m in Sources */,
+				AA3D1EE8254C12A4007D5224 /* CustomView.m in Sources */,
 				E2F3D67E253FE3DF008D73C7 /* SceneDelegate.m in Sources */,
 				E2F3D6B42540037C008D73C7 /* TabbarHomeVC.m in Sources */,
 			);

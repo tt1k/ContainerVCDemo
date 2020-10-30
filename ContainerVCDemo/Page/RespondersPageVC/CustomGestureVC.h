@@ -12,7 +12,7 @@
 @interface CustomGestureVC : UIViewController
 
 @property (nonatomic, strong) UIView *controlsView;
-@property (nonatomic, strong) UIImageView *knob;
+@property (nonatomic, strong) UIView *knob;
 @property (nonatomic, strong) UILabel *position;
 
 @end

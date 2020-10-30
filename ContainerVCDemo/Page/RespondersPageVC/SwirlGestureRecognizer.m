@@ -31,12 +31,10 @@
         NSLog(@"touch > 1");
         return;
     }
-    NSLog(@"%ld", (long)self.state);
 }
 
 - (void)touchesMoved:(NSSet*)touches withEvent:(UIEvent *)event {
     [super touchesMoved:touches withEvent:event];
-//    self.state = UIGestureRecognizerStateChanged;
 
     UITouch *touch = [touches anyObject];
     
@@ -46,19 +44,16 @@
     if ([self.target respondsToSelector:self.action]) {
         [self.target performSelector:self.action withObject:self];
     }
-    NSLog(@"%ld", (long)self.state);
 }
 
 - (void)touchesEnded:(NSSet*)touches withEvent:(UIEvent *)event {
     [super touchesEnded:touches withEvent:event];
     self.state = UIGestureRecognizerStateEnded;
-    NSLog(@"%ld", (long)self.state);
 }
 
 - (void)touchesCancelled:(NSSet*)touches withEvent:(UIEvent *)event {
     [super touchesCancelled:touches withEvent:event];
     self.state = UIGestureRecognizerStateCancelled;
-    NSLog(@"%ld", (long)self.state);
 }
 
 - (float)getTouchAngle:(CGPoint)touch {

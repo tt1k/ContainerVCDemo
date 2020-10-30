@@ -34,21 +34,18 @@
     _position.font = [UIFont systemFontOfSize:32];
     [self.view addSubview:_position];
     
-    _controlsView = [[UIView alloc] initWithFrame:CGRectMake(WIDTH * 0.1, 400, WIDTH * 0.8, WIDTH * 0.8)];
-    [self.view addSubview:_controlsView];
-    
     _knob = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"knob"]];
-    _knob.frame = CGRectMake(0, 0, WIDTH * 0.8, WIDTH * 0.8);
-    [_controlsView addSubview:_knob];
+    _knob.frame = CGRectMake(WIDTH * 0.1, 400, WIDTH * 0.8, WIDTH * 0.8);
+    [self.view addSubview:_knob];
     
     _swirlGestureRecognizer = [[SwirlGestureRecognizer alloc] initWithTarget:self action:@selector(rotationAction:)];
     _swirlGestureRecognizer.delegate = self;
-    [_controlsView addGestureRecognizer:_swirlGestureRecognizer];
+    [_knob addGestureRecognizer:_swirlGestureRecognizer];
     
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resetToZero:)];
     tapGestureRecognizer.delegate = self;
     tapGestureRecognizer.numberOfTapsRequired = 2;
-    [_controlsView addGestureRecognizer:tapGestureRecognizer];
+    [_knob addGestureRecognizer:tapGestureRecognizer];
     
     [_swirlGestureRecognizer requireGestureRecognizerToFail:tapGestureRecognizer];
 }
