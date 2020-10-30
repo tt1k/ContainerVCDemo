@@ -13,6 +13,7 @@
 #import "SplitViewController.h"
 #import "CustomViewController.h"
 #import "RespondersVC.h"
+#import "CustomGestureVC.h"
 
 @interface RootViewController() <UITableViewDelegate, UITableViewDataSource>
 
@@ -43,7 +44,7 @@
                                  @"UIPageViewController",
                                  @"UISpiltViewController"]];
     [_tableViewGroup addObject:@[@"模仿抖音"]];
-    [_tableViewGroup addObject:@[@"事件响应"]];
+    [_tableViewGroup addObject:@[@"事件响应Demo", @"自定义Gesture"]];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -99,12 +100,18 @@
         vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
         [self.navigationController presentViewController:vc animated:YES completion:nil];
     }
+    if (indexPath.section == 2 && indexPath.row == 1) {
+        CustomGestureVC *vc = [[CustomGestureVC alloc] init];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+        vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self.navigationController presentViewController:vc animated:YES completion:nil];
+    }
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if (section == 0) return @"系统自带的容器视图控制器";
     if (section == 1) return @"自定义的容器视图控制器";
-    if (section == 2) return @"其他";
+    if (section == 2) return @"事件响应";
     return @"Unknown";
 }
 

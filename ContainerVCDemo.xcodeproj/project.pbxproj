@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA909A5F254BD9A300013CEA /* CustomGestureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA909A5E254BD9A300013CEA /* CustomGestureVC.m */; };
+		AA909A65254BDA6900013CEA /* SwirlGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA909A64254BDA6900013CEA /* SwirlGestureRecognizer.m */; };
 		E2A15C172540920600B665D0 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A15C162540920600B665D0 /* ContentViewController.m */; };
 		E2A15C1C254098EA00B665D0 /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A15C1B254098EA00B665D0 /* SplitViewController.m */; };
 		E2A15C232540A2C100B665D0 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A15C222540A2C100B665D0 /* LeftViewController.m */; };
@@ -34,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA909A5D254BD99D00013CEA /* CustomGestureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomGestureVC.h; sourceTree = "<group>"; };
+		AA909A5E254BD9A300013CEA /* CustomGestureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomGestureVC.m; sourceTree = "<group>"; };
+		AA909A64254BDA6900013CEA /* SwirlGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwirlGestureRecognizer.m; sourceTree = "<group>"; };
+		AA909A68254BDB8D00013CEA /* SwirlGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwirlGestureRecognizer.h; sourceTree = "<group>"; };
 		E2A15C15254091FF00B665D0 /* ContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
 		E2A15C162540920600B665D0 /* ContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 		E2A15C1A254098E300B665D0 /* SplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewController.h; sourceTree = "<group>"; };
@@ -113,6 +119,10 @@
 			children = (
 				E2F24A46254AE22300C22589 /* RespondersVC.h */,
 				E2F24A47254AE22900C22589 /* RespondersVC.m */,
+				AA909A5D254BD99D00013CEA /* CustomGestureVC.h */,
+				AA909A5E254BD9A300013CEA /* CustomGestureVC.m */,
+				AA909A68254BDB8D00013CEA /* SwirlGestureRecognizer.h */,
+				AA909A64254BDA6900013CEA /* SwirlGestureRecognizer.m */,
 			);
 			path = RespondersPageVC;
 			sourceTree = "<group>";
@@ -331,9 +341,11 @@
 				E2F3D6BE254003A3008D73C7 /* TabbarShopVC.m in Sources */,
 				E2A15C492542D61800B665D0 /* UserVC.m in Sources */,
 				E2A15C3A2541376600B665D0 /* HeadCenterVC.m in Sources */,
+				AA909A5F254BD9A300013CEA /* CustomGestureVC.m in Sources */,
 				E2F3D681253FE3DF008D73C7 /* RootViewController.m in Sources */,
 				E2A15C1C254098EA00B665D0 /* SplitViewController.m in Sources */,
 				E2A15C292540AA0200B665D0 /* RightViewController.m in Sources */,
+				AA909A65254BDA6900013CEA /* SwirlGestureRecognizer.m in Sources */,
 				E2F3D67B253FE3DF008D73C7 /* AppDelegate.m in Sources */,
 				E2F3D6A3253FEF2B008D73C7 /* NavigationViewController.m in Sources */,
 				E2F24A48254AE22900C22589 /* RespondersVC.m in Sources */,
@@ -496,7 +508,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = site.waitforaday.ContainerVCDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = FakeCoder.TestCert1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -514,7 +526,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = site.waitforaday.ContainerVCDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = FakeCoder.TestCert1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
