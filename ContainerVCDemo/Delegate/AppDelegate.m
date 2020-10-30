@@ -12,7 +12,6 @@
 #pragma mark - Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [NSThread sleepForTimeInterval:0.2];
     return YES;
 }
 
